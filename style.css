@@ -32,14 +32,31 @@ header h1 {
   display: inline-block;
 }
 
-.menu-button {
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
+    .menu-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 34px;
+    cursor: pointer;
     padding: 5px;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+}
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 999;
 }
 
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 .menu-content {
   display: none;
@@ -110,7 +127,6 @@ nav a {
 .page.active {
     display: block;
 }
-
 
 /* メイン */
 main {
