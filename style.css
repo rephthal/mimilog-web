@@ -1,0 +1,51 @@
+/* 全体 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    padding: 20px;
+}
+
+/* メイン */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 見出し */
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+/* リンク */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 画像 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* フッター */
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
