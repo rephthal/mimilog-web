@@ -11,3 +11,4 @@ function showPage(pageId) {
 
     document.getElementById("menu").classList.remove("active");
 }
+
