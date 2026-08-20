@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script src="script.js"></script>
 
 <body>
 
@@ -19,18 +18,41 @@
 
     <nav id="menu">
         <button class="close-button" onclick="toggleMenu()">×</button>
-
-        <a href="#home">ホーム</a>
-        <a href="#about">このサイトについて</a>
-        <a href="#diary">日記</a>
-        <a href="#gallery">ギャラリー</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="javascript:void(0)" onclick="showPage('profile')">home</a>
+        <a href="javascript:void(0)" onclick="showPage('about')">profile</a>
+        <a href="javascript:void(0)" onclick="showPage('diary')">diary</a>
+        <a href="javascript:void(0)" onclick="showPage('gallery')">gallery</a>
+        <a href="javascript:void(0)" onclick="showPage('contact')">お問い合わせ</a>
     </nav>
     </header>
 
     <main>
-        <h2>見出し</h2>
-        <p>ここに文章を書きます。</p>
+    <section id="profile" class="page active">
+        <h2>home</h2>
+        <p>プロフィールの内容</p>
+    </section>
+
+    <section id="about" class="page">
+        <h2>profile</h2>
+        <p>サイトについての内容</p>
+    </section>
+
+    <section id="diary" class="page">
+        <h2>diary</h2>
+        <p>日記の内容</p>
+    </section>
+
+    <section id="gallery" class="page">
+        <h2>gallery</h2>
+        <p>ギャラリーの内容</p>
+    </section>
+
+    <section id="contact" class="page">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせの内容</p>
+    </section>
+
+
     </main>
 
     <footer>
