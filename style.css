@@ -10,6 +10,10 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fff;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* ヘッダー */
