@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" href="mimi.ico">
     <title>サイトのタイトル</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="script.js"></script>
 
 <body>
 
     <header>
         <h1>mimilog</h1>
+
+     <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+        <button class="close-button" onclick="toggleMenu()">×</button>
+
+        <a href="#home">ホーム</a>
+        <a href="#about">このサイトについて</a>
+        <a href="#diary">日記</a>
+        <a href="#gallery">ギャラリー</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
     </header>
 
     <main>
