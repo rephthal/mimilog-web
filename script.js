@@ -11,7 +11,7 @@ function showPage(pageId) {
 
     document.getElementById("menu").classList.remove("active");
 }
-<<<<<<< HEAD
+
 
 function toggleMenu() {
     const menu = document.getElementById("menu");
@@ -37,5 +37,3 @@ function showPage(pageId) {
 }
 
 document.getElementById("overlay").addEventListener("click", closeMenu);
-=======
->>>>>>> a1d5d8d8e2166eaf13f9d236c985aa3d2ef3cf09
