@@ -37,3 +37,15 @@ function showPage(pageId) {
 }
 
 document.getElementById("overlay").addEventListener("click", closeMenu);
+
+let count = localStorage.getItem("visitorCount");
+
+if (count === null) {
+    count = 1;
+} else {
+    count = Number(count) + 1;
+}
+
+localStorage.setItem("visitorCount", count);
+
+document.getElementById("visitor-count").textContent = count;
