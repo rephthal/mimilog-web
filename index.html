@@ -17,13 +17,15 @@
      <button class="menu-button" onclick="toggleMenu()">☰</button>
 
     <nav id="menu">
-        <button class="close-button" onclick="toggleMenu()">×</button>
-        <a href="javascript:void(0)" onclick="showPage('profile')">home</a>
-        <a href="javascript:void(0)" onclick="showPage('about')">profile</a>
-        <a href="javascript:void(0)" onclick="showPage('diary')">diary</a>
-        <a href="javascript:void(0)" onclick="showPage('gallery')">gallery</a>
-        <a href="javascript:void(0)" onclick="showPage('contact')">お問い合わせ</a>
-    </nav>
+    <button class="close-button" onclick="toggleMenu()">×</button>
+
+    <a href="#profile" onclick="toggleMenu()">home</a>
+    <a href="#about" onclick="toggleMenu()">profile</a>
+    <a href="#diary" onclick="toggleMenu()">diary</a>
+    <a href="#gallery" onclick="toggleMenu()">gallery</a>
+    <a href="#contact" onclick="toggleMenu()">お問い合わせ</a>
+</nav>
+
     </header>
     <div class="ticker">
     <div class="ticker-text">
@@ -36,11 +38,21 @@
         <h2>home</h2>
         <p>プロフィールの内容</p>
     </section>
+<section id="about" class="page">
+    <h2>profile</h2>
+<section id="home" class="page active"></section>
 
-    <section id="about" class="page">
-        <h2>profile</h2>
-        <p>サイトについての内容</p>
-    </section>
+    <div class="profile">
+        <img src="mimi-license.png" alt="プロフィール画像">
+
+        <div class="profile-text">
+            <h3>名前</h3>
+            <p>性格：のんびり</p>
+            <p>好きなもの：○○</p>
+            <p>趣味：○○</p>
+        </div>
+    </div>
+</section>
 
     <section id="diary" class="page">
         <h2>diary</h2>
